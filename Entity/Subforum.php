@@ -80,7 +80,7 @@ class Subforum
     /**
      * @var UserInterface
      *
-     * @ORM\ManyToOne(targetEntity="Yosimitso\WorkingForumBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="Nubapp\Resasocial\Component\Domain\Model\User\User")
      * @ORM\JoinColumn(name="lastReplyUser", referencedColumnName="id", nullable=true)
      */
     private $lastReplyUser;

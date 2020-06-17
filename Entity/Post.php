@@ -51,14 +51,14 @@ class Post
     /**
      * @var integer
      *
-     * @ORM\Column(name="user_id", type="integer", nullable=false)
+     * @ORM\Column(name="user_id", type="string", nullable=false)
      */
     private $userId;
 
     /**
      * @var UserInterface
      *
-     * @ORM\ManyToOne(targetEntity="Yosimitso\WorkingForumBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="Nubapp\Resasocial\Component\Domain\Model\User\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", nullable=true)
      */
     private $user;
@@ -222,7 +222,7 @@ class Post
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getUserId()
     {
@@ -230,7 +230,7 @@ class Post
     }
 
     /**
-     * @param int $userId
+     * @param string $userId
      *
      * @return Post
      */

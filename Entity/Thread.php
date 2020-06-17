@@ -34,7 +34,7 @@ class Thread
     /**
      * @var UserInterface
      *
-     * @ORM\ManyToOne(targetEntity="Yosimitso\WorkingForumBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="Nubapp\Resasocial\Component\Domain\Model\User\User")
      * @ORM\JoinColumn(name="author_id", referencedColumnName="id", nullable=false)
      */
     private $author;

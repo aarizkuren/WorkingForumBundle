@@ -34,7 +34,7 @@ class PostReport
     /**
      * @var integer
      *
-     * @ORM\ManyToOne(targetEntity="Yosimitso\WorkingForumBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="Nubapp\Resasocial\Component\Domain\Model\User\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", nullable=false)
      */
     private $user;
